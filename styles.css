@@ -1,0 +1,218 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+/*Fonts:*/
+@font-face {
+  font-family: "pwfine";
+  src: url("https://fonts.cdnfonts.com/s/81708/PWFine.woff");
+}
+
+@font-face {
+  font-family: "blurmix";
+  src: url("https://fonts.cdnfonts.com/s/22490/Blurmix.woff");
+}
+
+/*General text styling:*/
+body {
+  font-family: "blurmix", Fallback, serif;
+  font-size: 0.63em;
+  font-weight: bolder;
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+}
+
+h1 {
+  font-family: "pwfine", Fallback, sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h1,
+h2 {
+  letter-spacing: 0.1em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.textIndent {
+  text-indent: 20px;
+}
+
+/*Links:*/
+a:link {
+  color: #a66a;
+}
+
+a:visited {
+  color: rgb(79, 2, 71);
+}
+
+a:focus {
+  outline: 0;
+  color: red;
+}
+
+a:hover {
+  color: hotpink;
+  text-decoration: none;
+}
+
+a:active {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bolder;
+}
+
+a[href^="https"]::after {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-left: 0.25em;
+  vertical-align: text-bottom;
+
+  background-size: 100%;
+  background-image: url("https://img.icons8.com/?size=100&id=82787&format=png&color=000000");
+}
+
+/*Lists:*/
+ul,
+ol,
+aside ul {
+  word-spacing: 0.1em;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+section ul {
+  list-style-type: circle;
+}
+
+section ol {
+  list-style-type: lower-latin;
+}
+
+aside ul {
+  list-style-type: square;
+  list-style: square;
+}
+
+/*Navigation menu:*/
+nav ul li {
+  list-style-type: none; /*removes bulletins*/
+}
+
+nav ul li a:active {
+  font-size: 1.4em;
+}
+
+nav ul li a {
+  display: block;
+  margin-bottom: 0.5em; /*create space between the nav menu options */
+  text-decoration: none; /*removes underline*/
+  text-align: center;
+  font-size: 1.3em;
+  padding: 1em;
+  border: 1px solid #a66;
+  border-radius: 0.2em;
+}
+/*         _
+       .__(.)< (MEOW)
+        \___)   
+ ~~~~~~~~~~~~~~~~~~-->
+/* 
+
+Fonts:
+
+- First of all, download a couple of free-to-use fonts. Because this is a college, 
+the fonts should be chosen to give the page a fairly serious, formal, trustworthy feel: a serif site-wide font for the general body text, coupled with a sans-serif or slab serif for the headings might be nice.
+- Use a suitable service to generate bulletproof @font-face code for these two fonts.
+- Apply your body font to the whole page, and your heading font to your headings.
+
+
+General text styling:
+
+- Give the page a site-wide font-size of 10px.
+- Give your headings and other element types appropriate font-sizes defined using a suitable relative unit.
+- Give your body text a suitable line-height.
+- Center your top level heading on the page.
+- Give your headings a little bit of letter-spacing to make them not too squashed, and allow the letters to breathe a bit.
+- Give your body text some letter-spacing and word-spacing, as appropriate.
+- Give the first paragraph after each heading in the <section> a little bit of text-indentation, say 20px.
+
+
+Links:
+
+- Give the link, visited, focus, and hover states some colors that go with the color of the horizontal bars at the top and bottom of the page.
+- Make it so that links are underlined by default, but when you hover or focus them the underline disappears.
+- Remove the default focus outline from ALL the links on the page.
+- Give the active state a noticeably different styling so it stands out nicely, but make it still fit in with the overall page design.
+- Make it so that external links have the external link icon inserted next to them.
+
+Lists:
+
+- Make sure the spacing of your lists and list items works well with the styling of the overall page. 
+- Each list item should have the same line-height as a paragraph line, 
+and each list should have the same spacing at its top and bottom as you have between paragraphs.
+- 
+Give your list items a nice bullet appropriate for the design of the page. 
+It is up to you whether you choose a custom bullet image or something else.
+
+Navigation menu:
+- Style your navigation menu so that it harmonizes with the page.
+
+*/
